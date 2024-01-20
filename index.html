@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iheb Gafsi</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="styles/particles.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mediaqueries.css" />
+    <link rel="icon" href="assets/DO.png" />
   </head>
   <body>
+    <div class="intro">
+      <h1 class="logo-header">
+        <span class="intrologo">Ih</span><span class="intrologo">eb</span>
+      </h1>
+    </div>
+    <div id="particles-js"></div>
     <nav id="desktop-nav">
       <div class="logo">Iheb Gafsi</div>
       <div>
@@ -112,12 +120,6 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
@@ -602,12 +604,6 @@
             </div>
       </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -641,7 +637,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/colorectal.jpeg"
+                src="./assets/colorectal.png"
                 alt="Project 2"
                 class="project-img"
               />
@@ -688,12 +684,6 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#organizations'"
-      />
     </section>
     <section id="organizations">
       <p class="section__text__p1">Get To Know My</p>
@@ -726,14 +716,21 @@
                 Data Overflow 2024
             </div>
           </div>
+          <div class="org-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/gdsc.png"
+                alt="Project 3"
+                class="organisation-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Team Member</h2>
+            <div class="btn-container">
+                Google Developer Student Club INSAT
+            </div>
+          </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -771,6 +768,9 @@
       </nav>
       <p>Copyright &#169; 2024 Iheb Gafsi. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="scripts/intro.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
