@@ -299,9 +299,10 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: rgba(70, 42, 78, 0.211);
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.05rem solid;
+  background: rgba(48, 18, 56, 0.211);
+  backdrop-filter: blur(2px);
+  border-radius: 1rem;
+  border: rgb(53, 53, 53) 0.01rem solid;
   border-color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -385,6 +386,39 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+/* BOOKS SECTION */
+
+#books {
+  position: relative;
+  height: fit-content;
+}
+
+.books-img {
+  border-radius: 1rem;
+  width: 20%;
+  height: 20%;
+}
+
+.books-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+.book-details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.215);
+  border-radius: 2rem;
+  border-color: rgb(163, 163, 163);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 /* ORGANIZATIONS SECTION */
 
 #organizations {
@@ -404,7 +438,9 @@ article .icon {
     background: rgba(255, 255, 255, 0.215);
     border-radius: 2rem;
     border-color: rgb(163, 163, 163);
+    backdrop-filter: blur(2px);
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 /* CONTACT */
 
