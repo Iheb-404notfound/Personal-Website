@@ -1,805 +1,851 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iheb Gafsi</title>
-    <link rel="stylesheet" href="styles/particles.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/mediaqueries.css" />
-    <link rel="icon" href="assets/DO.png" />
-  </head>
-  <body>
-    <div class="intro">
-      <h1 class="logo-header">
-        <span class="intrologo">Ih</span><span class="intrologo">eb</span>
-      </h1>
-    </div>
-    <div id="particles-js"></div>
-    <nav id="desktop-nav">
-      <div class="logo">Iheb Gafsi</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#books">Books</a></li>
-          <li><a href="#organizations">Organizations</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iheb Gafsi - ML Engineer & AI Researcher</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%231e40af;stop-opacity:1'/><stop offset='100%25' style='stop-color:%237c3aed;stop-opacity:1'/></linearGradient><linearGradient id='accent' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%2360a5fa;stop-opacity:1'/><stop offset='100%25' style='stop-color:%23a78bfa;stop-opacity:1'/></linearGradient></defs><rect width='32' height='32' rx='8' fill='url(%23bg)'/><circle cx='16' cy='16' r='3' fill='none' stroke='%23ffffff' stroke-width='1.5' opacity='0.8'/><ellipse cx='16' cy='16' rx='8' ry='4' fill='none' stroke='%23ffffff' stroke-width='1' opacity='0.6'/><ellipse cx='16' cy='16' rx='8' ry='4' fill='none' stroke='%23ffffff' stroke-width='1' opacity='0.6' transform='rotate(60 16 16)'/><ellipse cx='16' cy='16' rx='8' ry='4' fill='none' stroke='%23ffffff' stroke-width='1' opacity='0.6' transform='rotate(120 16 16)'/><circle cx='16' cy='16' r='2' fill='%23ffffff'/><circle cx='24' cy='16' r='1.5' fill='url(%23accent)'/><circle cx='8' cy='16' r='1.5' fill='url(%23accent)'/><circle cx='20' cy='9' r='1.5' fill='url(%23accent)'/><circle cx='12' cy='23' r='1.5' fill='url(%23accent)'/><text x='16' y='19' font-family='Inter, sans-serif' font-size='6' font-weight='bold' fill='%231e40af' text-anchor='middle'>I</text></svg>">
+    
+    <!-- Meta tags for better SEO and social sharing -->
+    <meta name="description" content="Iheb Gafsi - ML Engineer, AI Researcher, and Technical Course Writer specializing in accelerated AI systems, federated ML pipelines, and distributed workloads.  Coming from a physics and mathematics background, I employ and develop powerful tools from physics, mathematics, computer science and theoretical neuroscience to understand how large neural networks learn, compute, scale, reason and imagine. I additionally use machine learning tools to understand physical systems and their behavior like particle physics and quantum mechanics">
+    <meta name="keywords" content="Machine Learning, Artificial Intelligence, Deep Learning, Neural Networks, AI Research, MLOps, Computer Vision, NLP">
+    <meta name="author" content="Iheb Gafsi">
+    
+    <!-- Open Graph meta tags for social media -->
+    <meta property="og:title" content="Iheb Gafsi - ML Engineer & AI Researcher">
+    <meta property="og:description" content="Specializing in accelerated AI systems, federated ML pipelines, and distributed workloads. Expert in LLMs, TTS, ASR, and Multi-Modal Topologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ihebgafsi.dev">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Iheb Gafsi - ML Engineer & AI Researcher">
+    <meta name="twitter:description" content="Specializing in accelerated AI systems, federated ML pipelines, and distributed workloads.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Iheb Gafsi</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#volunteering" class="nav-link">Leadership</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Iheb Gafsi</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Iheb Gafsi</h1>
+                <p class="hero-subtitle">ML Engineer | Editor at DataCamp | Engineering Student at INSAT</p>
+                <p class="hero-description">
+                    Bridging physics, mathematics, and AI to understand how neural networks learn and reason. 
+                    Specializing in accelerated AI systems, federated ML pipelines, and quantum-ML applications.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">12,076</span>
+                        <span class="stat-label">Followers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1,900+</span>
+                        <span class="stat-label">Professionals Coached</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">45+</span>
+                        <span class="stat-label">Research Projects</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#books" onclick="toggleMenu()">Books</a></li>
-          <li><a href="#organizations" onclick="toggleMenu()">Organizations</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Iheb Gafsi profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Greetings! I'm</p>
-        <h1 class="title">Iheb Gafsi</h1>
-        <p class="section__text__p2">Machine Learning Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/iheb-gafsi-ml/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Iheb-404notfound'"
-          />
-        </div>
-      </div>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>4+ years <br />Machine Learning Engineering</p>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I work on accelerated AI systems enabling edge intelligence with federated ML pipelines, 
+                        focusing on decentralized data and distributed workloads. My expertise spans Large Language 
+                        Models (LLMs), Text-To-Speech (TTS), Automatic Speech Recognition (ASR), and Multi-Modal Topologies.
+                        Coming from a physics and mathematics background, I employ and develop powerful tools from physics, mathematics, computer science and theoretical neuroscience to understand how large neural networks learn, compute, scale, reason and imagine. I concomitantly use machine learning tools to understand physical systems and their behavior like particle physics and quantum mechanics.
+                    </p>
+                    <div class="about-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Based in Germany</span>
+                    </div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>AI & Machine Learning</h3>
+                        <div class="skills">
+                            <span class="skill-tag">Large Language Models</span>
+                            <span class="skill-tag">Multi-Agent Systems</span>
+                            <span class="skill-tag">Computer Vision</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Engineering & Systems</h3>
+                        <div class="skills">
+                            <span class="skill-tag">MLOps</span>
+                            <span class="skill-tag">Distributed Systems</span>
+                            <span class="skill-tag">Data Engineering</span>
+                            <span class="skill-tag">Edge Computing</span>
+                            <span class="skill-tag">Quantum Computing</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p> Pre-engineering Degree in Maths-Physics-Computer Science<br />
-                ICT Engineering Student(B.Sc.+M.Sc.) INSAT</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-                A 20-year-old ICT engineering student with a genuine passion for technology. I enjoy exploring different aspects of ICT and am eager to contribute my skills in various settings. Excited about the possibilities and always ready to learn and grow.
-            </p>
-          </div>
         </div>
-      </div>
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">ML</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TensorFlow</h3>
-                  <p>Experienced</p>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Technical Course Writer</h3>
+                        <h4>DataCamp</h4>
+                        <span class="timeline-date">Jan 2025 – Present</span>
+                        <span class="timeline-location">New York, United States (Remote)</span>
+                        <p>Creating educational materials on Artificial Intelligence and Machine Learning, focusing on simplifying complex technical concepts for learners worldwide.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">AI Education</span>
+                            <span class="skill-tag">Multi-agent Systems</span>
+                        </div>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Pytorch</h3>
-                  <p>Experienced</p>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Deep Learning Instructor</h3>
+                        <h4>NVIDIA</h4>
+                        <span class="timeline-date">May 2024 – Apr 2025</span>
+                        <span class="timeline-location">Stuttgart, Germany (Hybrid)</span>
+                        <p>Coached 1,900+ professionals and collaborated with universities. Delivered workshops on Accelerated AI using NVIDIA's NeMo Services, Cloud, RAPIDS, and Jetson Nano.</p>
+                        <ul>
+                            <li>Efficient Large Language Models Customization</li>
+                            <li>Computer Vision for Industrial Inspection</li>
+                            <li>Building Transformer-Based NLP</li>
+                            <li>Data Parallelism for Multi-GPU Training</li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">NVIDIA Technologies</span>
+                            <span class="skill-tag">Training & Education</span>
+                        </div>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Numpy</h3>
-                  <p>Experienced</p>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>AI Research Scientist</h3>
+                        <h4>WiseVision AI Technologies</h4>
+                        <span class="timeline-date">Oct 2024 – Feb 2025</span>
+                        <p>Advanced research in predictive modeling, multi-agent systems, and computer vision applications.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Predictive Modeling</span>
+                            <span class="skill-tag">NER</span>
+                            <span class="skill-tag">Intent Classification</span>
+                        </div>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Pandas</h3>
-                  <p>Experienced</p>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Associate Machine Learning Researcher</h3>
+                        <h4>Callem AI</h4>
+                        <span class="timeline-date">Apr 2024 – Nov 2024</span>
+                        <span class="timeline-location">Île-de-France, France (Hybrid)</span>
+                        <p>Automated telephony with energy-efficient Conversational AI on distributed systems.</p>
+                        <div class="achievements">
+                            <div class="achievement-section">
+                                <h5>Production Work:</h5>
+                                <ul>
+                                    <li>Developed Graph Data for Telephony Conversational AI</li>
+                                    <li>Architected Multi-Agent Systems and published MASAS paper</li>
+                                    <li>Implemented Multi-Turn Context Response Selection pipeline</li>
+                                    <li>Published NoRA paper (Neuro-Evolution of Low Rank Adaptation)</li>
+                                </ul>
+                            </div>
+                            <div class="achievement-section">
+                                <h5>Research Work:</h5>
+                                <ul>
+                                    <li>Implemented Neural Radiance Fields (NeRF) for 3D-vision</li>
+                                    <li>Fine-tuned Whisper-based TTS and ASR models</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Multi-agent Systems</span>
+                            <span class="skill-tag">Distributed Systems</span>
+                            <span class="skill-tag">GraphQL</span>
+                        </div>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Scikit-learn</h3>
-                  <p>Experienced</p>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Technical Advisor</h3>
+                        <h4>Revenger AI</h4>
+                        <span class="timeline-date">Sep 2024 – Oct 2024</span>
+                        <span class="timeline-location">Cologne, Germany (On-site)</span>
+                        <p>Employed advanced AI for reverse engineering tasks, including vulnerability identification and data extraction. Developed AI-driven reverse engineering frameworks for efficiency and precision.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Multi-agent Systems</span>
+                            <span class="skill-tag">Data Engineering</span>
+                            <span class="skill-tag">Automated Feature Engineering</span>
+                        </div>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>XGBoost</h3>
-                  <p>Intermediate</p>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Data Specialist</h3>
+                        <h4>Mindrift</h4>
+                        <span class="timeline-date">Jul 2024 – Aug 2024</span>
+                        <span class="timeline-location">Lund, Sweden (Remote)</span>
+                        <p>Designed anomaly detection pipelines and ensured data reliability through cleansing and correction. Documented data quality findings and recommendations.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Big Data Analytics</span>
+                            <span class="skill-tag">Data Engineering</span>
+                            <span class="skill-tag">Anomaly Detection</span>
+                        </div>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HuggingFace</h3>
-                  <p>Experienced</p>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Mentor</h3>
+                        <h4>Teens in AI</h4>
+                        <span class="timeline-date">Mar 2024 – May 2024</span>
+                        <span class="timeline-location">United Kingdom (Remote)</span>
+                        <p>Mentored teens in AI, code, and AI ethics for the Global Techathon, developing a Healthcare Information Technology (HIT) solution.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">RAG</span>
+                            <span class="skill-tag">AI Ethics</span>
+                            <span class="skill-tag">Healthcare IT</span>
+                            <span class="skill-tag">Mentoring</span>
+                        </div>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>OpenCV</h3>
-                  <p>Experienced</p>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>GenAI Engineer</h3>
+                        <h4>Silver Brain AI AG</h4>
+                        <span class="timeline-date">Feb 2024 – May 2024</span>
+                        <span class="timeline-location">Switzerland (Remote)</span>
+                        <p>Advanced LLM development and optimization for chemistry applications.</p>
+                        <ul>
+                            <li>Trained Mistral 7B-Instruct-v0.2 on chemistry concepts, outperforming GPT-4 on 8 tasks</li>
+                            <li>Improved LLM performance from 68% to 92% using QLoRA on Azure VM</li>
+                            <li>Aligned LLMs to eliminate hallucination and limited action scope</li>
+                            <li>Developed synthetic data generation systems, increasing result diversity by 47%</li>
+                            <li>Built auto-evaluation tools for LLM-based solutions</li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Azure ML</span>
+                            <span class="skill-tag">LLM Fine-tuning</span>
+                            <span class="skill-tag">QLoRA</span>
+                            <span class="skill-tag">Synthetic Data</span>
+                        </div>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>YOLOv8</h3>
-                  <p>Experienced</p>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Data Engineer Intern</h3>
+                        <h4>Silver Brain AI AG</h4>
+                        <span class="timeline-date">Dec 2023 – Feb 2024</span>
+                        <span class="timeline-location">Zurich, Switzerland</span>
+                        <p>Foundation work in data engineering and ML systems for chemistry applications.</p>
+                        <ul>
+                            <li>Designed ETL pipelines for chemistry data and utilized Apache Cassandra for scalable storage</li>
+                            <li>Implemented attention-based OCR systems and generated synthetic data for benchmarking</li>
+                            <li>Scraped licensed chemistry data using Puppeteer</li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">ETL Pipelines</span>
+                            <span class="skill-tag">Apache Cassandra</span>
+                            <span class="skill-tag">OCR Systems</span>
+                            <span class="skill-tag">MLOps</span>
+                        </div>
+                    </div>
                 </div>
-              </article>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>MLOps Engineer</h3>
+                        <h4>PeddyMark Ltd. / Animal Tracker</h4>
+                        <span class="timeline-date">Sep 2023 – Nov 2023</span>
+                        <span class="timeline-location">Redhill, England (Remote)</span>
+                        <p>Developed ML models for pet tracking using geospatial data and SAR applications. Analyzed pet location data and incorporated environmental factors for predictive modeling.</p>
+                        <ul>
+                            <li>Created geofencing and activity recognition models for pet behavior insights</li>
+                            <li>Implemented search and rescue (SAR) optimization algorithms</li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Geospatial ML</span>
+                            <span class="skill-tag">MLOps</span>
+                            <span class="skill-tag">Predictive Modeling</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">MLOps</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ZenML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MLFlow</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MLib</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PySpark</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Streamlit</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
         </div>
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Visualization</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Matplotlib</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Seaborn</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Plotly</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>D3.js</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Databases</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Neo4j</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Containerization and Orchestration</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Docker</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Kubernetes</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Cloud Computing</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Google Cloud</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Firebase</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-        <div class="about-containers">
-              <div class="details-container">
-                <h2 class="experience-sub-title">Reinforcement Learning</h2>
-                <div class="article-container">
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Proximal Policy Optimization</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Deep Q-Networks</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Neuroevolution of Augmented Topologies</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <div class="details-container">
-                <h2 class="experience-sub-title">Web Developement</h2>
-                <div class="article-container">
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>HTML</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>CSS</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>JavaScript</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>PHP</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Django</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Node.js</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                </div>
-              </div>
-        </div>
-        <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Game Developement and Simulation</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Unity C# + JavaScript</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Unreal Engine C++</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Android Apps Developement</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Java</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Kotlin</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-      </div>
-      </div>
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/GPT3.png"
-                alt="GPT3"
-                class="project-img"
-              />
+
+    <!-- Volunteering Section -->
+    <section class="volunteering" id="volunteering">
+        <div class="container">
+            <h2 class="section-title">Leadership & Volunteering</h2>
+            <div class="volunteering-grid">
+                <div class="volunteer-card current">
+                    <div class="volunteer-header">
+                        <h3>AI Training Manager</h3>
+                        <h4>ACM INSAT Student Chapter</h4>
+                        <span class="volunteer-date">Sep 2024 – Present</span>
+                    </div>
+                    <p>Leading AI training initiatives and educational programs for computer science students.</p>
+                </div>
+
+                <div class="volunteer-card current">
+                    <div class="volunteer-header">
+                        <h3>Writer</h3>
+                        <h4>INSAT Press</h4>
+                        <span class="volunteer-date">Sep 2024 – Present</span>
+                    </div>
+                    <p>Contributing articles on human rights and technology topics for the institutional publication.</p>
+                    <div class="volunteer-focus">
+                        <span class="focus-tag">Human Rights</span>
+                    </div>
+                </div>
+
+                <div class="volunteer-card current">
+                    <div class="volunteer-header">
+                        <h3>Head of Machine Learning</h3>
+                        <h4>Google Developer Student Club - INSAT</h4>
+                        <span class="volunteer-date">Sep 2024 – Present</span>
+                    </div>
+                    <p>Leading ML initiatives and organizing workshops for the developer community.</p>
+                </div>
+
+                <div class="volunteer-card">
+                    <div class="volunteer-header">
+                        <h3>Chairman</h3>
+                        <h4>Data Overflow</h4>
+                        <span class="volunteer-date">Nov 2023 – Sep 2024</span>
+                    </div>
+                    <p>Led data science community initiatives and organized technical events.</p>
+                </div>
+
+                <div class="volunteer-card current">
+                    <div class="volunteer-header">
+                        <h3>Member</h3>
+                        <h4>IEEE Computer Society</h4>
+                        <span class="volunteer-date">Sep 2023 – Present</span>
+                    </div>
+                    <p>Active participation in professional development and technical conferences.</p>
+                </div>
+
+                <div class="volunteer-card current">
+                    <div class="volunteer-header">
+                        <h3>Core Team Member</h3>
+                        <h4>Google Developer Student Club - INSAT</h4>
+                        <span class="volunteer-date">Aug 2021 – Present</span>
+                    </div>
+                    <p>Long-term contributor to science and technology initiatives in the student community.</p>
+                    <div class="volunteer-focus">
+                        <span class="focus-tag">Science & Technology</span>
+                    </div>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">NerdGPT</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Iheb-404notfound'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Iheb-404notfound'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/colorectal.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Colorectal Cancer Detection</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Iheb-404notfound'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Iheb-404notfound'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/horror.jpg"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Horror Game</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Iheb-404notfound'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Iheb-404notfound'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
-    <section id="books">
-      <p class="section__text__p1">Read My</p>
-      <h1 class="title">Books</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="books-container">
-              <img
-                src="./assets/GraphTheory.jpg"
-                alt="Graph Theory"
-                class="books-img"
-              />
+
+    <!-- Additional Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title">Additional Learning</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Cosmology</h3>
+                    <h4>MIT OpenCourseWare</h4>
+                    <span class="course-code">8.942</span>
+                    <p>Advanced study of the universe's structure, evolution, and fundamental physics.</p>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-quantum-gate"></i>
+                    </div>
+                    <h3>Quantum Computation</h3>
+                    <h4>MIT OpenCourseWare</h4>
+                    <span class="course-code">18.435J</span>
+                    <p>Theoretical foundations and practical applications of quantum computing systems.</p>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3>Quantum Theory II</h3>
+                    <h4>MIT OpenCourseWare</h4>
+                    <span class="course-code">8.322</span>
+                    <p>Advanced quantum mechanics and its applications in modern physics.</p>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Graph Theory Odyssey</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Iheb-404notfound'">
-                Read
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
-    <section id="organizations">
-      <p class="section__text__p1">Get To Know My</p>
-      <h1 class="title">Organizations</h1>
-      <div class="organisation-details-container">
-        <div class="about-containers">
-          <div class="org-details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/ieee.jpeg"
-                alt="Project 2"
-                class="organisation-img"
-              />
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>INSAT - Institut National des Sciences Appliquées et de Technologie</h3>
+                        <span class="education-degree">Engineering, Applied Sciences and Technology</span>
+                        <span class="education-date">Aug 2022 – Jun 2027</span>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-activities">
+                            <strong>Activities:</strong> ACM, IEEE, GDSC, INSAT Press
+                        </div>
+                        <div class="course-categories">
+                            <div class="course-category">
+                                <h4>Mathematics</h4>
+                                <p>Stochastic Processes, Statistical Learning, Convex Optimization, Advanced Statistics, Operational Research, Numerical Methods</p>
+                            </div>
+                            <div class="course-category">
+                                <h4>Computer Science</h4>
+                                <p>Computer Architectures Engineering, Operating Systems Engineering, Smart Devices, Embedded Intelligent Systems and IoT</p>
+                            </div>
+                            <div class="course-category">
+                                <h4>Networks & Telecommunications</h4>
+                                <p>Discrete Time Signal Processing, Protocol Engineering, Random Signal Processing, 5G Networks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>Lycée de Jemmel</h3>
+                        <span class="education-degree">Baccalaureate, Computer Science</span>
+                        <span class="education-date">Jun 2021 – Jun 2022</span>
+                    </div>
+                    <div class="education-content">
+                        <div class="achievement-highlight">
+                            <i class="fas fa-trophy"></i>
+                            <span>4th Top Student at National Level - 11th nationally</span>
+                        </div>
+                        <p>Received municipal, provincial, and ministerial honors. Authored Python course for scientific computing and created chemistry handbook.</p>
+                    </div>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Member</h2>
-            <div class="btn-container">
-                IEEE Student Branch Computer Science Chapter INSAT
-            </div>
-          </div>
-          <div class="org-details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/DO.png"
-                alt="Project 3"
-                class="organisation-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Chairman</h2>
-            <div class="btn-container">
-                Data Overflow 2024
-            </div>
-          </div>
-          <div class="org-details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/gdsc.png"
-                alt="Project 3"
-                class="organisation-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Team Member</h2>
-            <div class="btn-container">
-                Google Developer Student Club INSAT
-            </div>
-          </div>
         </div>
-      </div>
     </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:iheb.engineer@gmail.com">iheb.engineer@gmail.com</a></p>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Gaussian B-Splined Kolmogorov Arnold Physics Informed Neural Networks</h3>
+                        <span class="project-date">Jul 2025</span>
+                    </div>
+                    <p class="project-description">
+                        Utilized Gaussian B-splines in Kolmogorov-Arnold approximators for interpretable ML. 
+                        Demonstrated KANs' universality for solving parametric differential equations.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Scientific Computing</span>
+                        <span class="skill-tag">Fluid Mechanics</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Voice Controlled Robotic Vehicle</h3>
+                        <span class="project-date">Jun 2025</span>
+                    </div>
+                    <p class="project-description">
+                        Developed a voice-controlled robotic vehicle using LPU-based Whisper Large for millisecond response times.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Robotics</span>
+                        <span class="skill-tag">Speech Recognition</span>
+                        <span class="skill-tag">Real-time Systems</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Optimizing Restricted Boltzmann Machines via Quantum Annealing</h3>
+                        <span class="project-date">Jan 2025 – May 2025</span>
+                    </div>
+                    <p class="project-description">
+                        Proposed a quantum restricted Boltzmann machine (QBM) for accurate data representations in high-dimensional Hilbert spaces.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Quantum Computing</span>
+                        <span class="skill-tag">Statistical Physics</span>
+                        <span class="skill-tag">Machine Learning</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Kolmogorov Arnold Neural Networks Framework</h3>
+                        <span class="project-date">Jan 2025</span>
+                    </div>
+                    <p class="project-description">
+                        Python implementation based on the Kolmogorov-Arnold Representation Theorem for regression and classification tasks.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Neural Networks</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Framework Development</span>
+                    </div>
+                    <a href="https://github.com/Iheb-404notfound/Kolmogorov-Arnold-Networks-Framework" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Unstable Diffusion</h3>
+                        <span class="project-date">Dec 2023 – Jan 2024</span>
+                    </div>
+                    <p class="project-description">
+                        Built a generative model from scratch using PyTorch, based on Stable Diffusion concepts.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Generative AI</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Computer Vision</span>
+                    </div>
+                    <a href="https://github.com/Iheb-404notfound/unstable-diffusion" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>NEAT Framework</h3>
+                        <span class="project-date">Jun 2023 – Jul 2023</span>
+                    </div>
+                    <p class="project-description">
+                        Implemented a Python framework for Neuro Evolution of Augmented Topologies.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Evolutionary Algorithms</span>
+                        <span class="skill-tag">Reinforcement Learning</span>
+                        <span class="skill-tag">Neural Networks</span>
+                    </div>
+                    <a href="https://github.com/Iheb-404notfound/NEAT" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Credit Card Fraud Detection MLOps</h3>
+                        <span class="project-date">Nov 2023</span>
+                    </div>
+                    <p class="project-description">
+                        Implemented fraud detection with MLFlow and ZenML for streamlined ML lifecycle management and automated model deployment.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">MLOps</span>
+                        <span class="skill-tag">MLFlow</span>
+                        <span class="skill-tag">ZenML</span>
+                        <span class="skill-tag">Fraud Detection</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Graph Theory Odyssey Book</h3>
+                        <span class="project-date">Aug 2023 – Sep 2023</span>
+                    </div>
+                    <p class="project-description">
+                        Authored a comprehensive book covering advanced graph theory topics, algorithms, and applications in computer science.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Graph Theory</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">Technical Writing</span>
+                    </div>
+                    <a href="https://github.com/Iheb-404notfound/Graph-Theory" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>NLP Projects Repository</h3>
+                        <span class="project-date">Jun 2023 – Jul 2023</span>
+                    </div>
+                    <p class="project-description">
+                        Collection of natural language processing projects using various techniques and modern frameworks including TensorFlow and PyTorch.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Text Processing</span>
+                    </div>
+                    <a href="https://github.com/Iheb-404notfound/Some-NLP-Work" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Python Full Course</h3>
+                        <span class="project-date">Aug 2021 – Nov 2021</span>
+                    </div>
+                    <p class="project-description">
+                        Comprehensive documentation of Python libraries for data scientists and analysts, covering essential tools and techniques.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Education</span>
+                        <span class="skill-tag">Documentation</span>
+                    </div>
+                    <a href="https://github.com/Iheb-404notfound/Scratch-Python-Course" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>SMART Pet Plant</h3>
+                        <span class="project-date">Associated with INSAT</span>
+                    </div>
+                    <p class="project-description">
+                        IoT project using ESP32/Arduino to monitor and display plant conditions via sensors, creating an interactive pet plant experience.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">IoT</span>
+                        <span class="skill-tag">ESP32</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">Sensors</span>
+                    </div>
+                    <a href="https://github.com/Iheb-404notfound/smart-pet-plant" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Horror Game with Unreal Engine</h3>
+                        <span class="project-date">Jun 2019 – Jan 2020</span>
+                    </div>
+                    <p class="project-description">
+                        Developed a horror game using Unreal Engine and C++ with intelligent zombie AI powered by decision trees for realistic gameplay.
+                    </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">Unreal Engine 4</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Game AI</span>
+                        <span class="skill-tag">Decision Trees</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/iheb-gafsi-ml/">LinkedIn</a></p>
-        </div>
-      </div>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#books">Books</a></li>
-            <li><a href="#organizations">Organizations</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+    <!-- Publications Section -->
+    <section class="publications" id="publications">
+        <div class="container">
+            <h2 class="section-title">Publications & Research</h2>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div class="publication-header">
+                        <h3>RAYGo: Retrieve As You Go for Large-Scale Asynchronous Action Planning</h3>
+                        <span class="publication-venue">Zenodo, Sep 1, 2024</span>
+                    </div>
+                    <p class="publication-description">
+                        Introduced a Chain-of-Actions and Retrieve-As-You-Go approach for LLM action planning, outperforming GPT-4 by 29%.
+                    </p>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-header">
+                        <h3>Linear-Time Sequence Modeling with Selective State Space Mamba</h3>
+                        <span class="publication-venue">Zenodo, Jan 15, 2023</span>
+                    </div>
+                    <p class="publication-description">
+                        Presented Mamba, a linear-time architecture outperforming Transformers for long sequences.
+                    </p>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-header">
+                        <h3>Transformers</h3>
+                        <span class="publication-venue">Zenodo, Aug 13, 2023</span>
+                    </div>
+                    <p class="publication-description">
+                        Overview of the Transformer architecture, focusing on self-attention and scalability in NLP.
+                    </p>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-header">
+                        <h3>Feed Forward Neural Networks</h3>
+                        <span class="publication-venue">Zenodo, Jul 9, 2023</span>
+                    </div>
+                    <p class="publication-description">
+                        Detailed the architecture and applications of FFNNs as universal approximators.
+                    </p>
+                </div>
+            </div>
         </div>
-      </nav>
-      <p>Copyright &#169; 2024 Iheb Gafsi. All Rights Reserved.</p>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards">
+        <div class="container">
+            <h2 class="section-title">Honors & Awards</h2>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>First Place</h3>
+                    <h4>National Robotics Weekend</h4>
+                    <span class="award-date">Jun 2025</span>
+                    <p>Won for developing an astronaut robot for Mars sample collection.</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h3>Google Developer Nanodegree</h3>
+                    <h4>Google</h4>
+                    <span class="award-date">Feb 2020</span>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>One Million Arab Coders Contest Winner</h3>
+                    <h4>Ministry of AI, UAE</h4>
+                    <span class="award-date">Feb 2020</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Interested in collaborating on AI research, discussing machine learning projects, or exploring opportunities in accelerated AI systems? I'd love to hear from you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Germany</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>Available on LinkedIn</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-users"></i>
+                            <span>12,076 Followers</span>
+                        </div>
+                    </div>
+
+                    <div class="languages">
+                        <h4>Languages</h4>
+                        <div class="language-list">
+                            <span class="language">Arabic (Native)</span>
+                            <span class="language">English (Professional)</span>
+                            <span class="language">French (Professional)</span>
+                            <span class="language">German (Working)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Iheb Gafsi. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#publications">Publications</a>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="scripts/intro.js"></script>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/particles.js"></script>
-    <script src="scripts/app.js"></script>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
