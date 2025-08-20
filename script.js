@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeAnimations();
     initializeSmoothScrolling();
     initializeTypewriter();
+    initializeMathRendering();
 });
 
 // Navigation functionality
@@ -132,10 +133,24 @@ function initializeScrollEffects() {
 
     // Observe elements for animation
     const animateElements = document.querySelectorAll(
-        '.timeline-item, .project-card, .publication-item, .award-card, .education-card, .about-content, .skills-grid'
+        '.timeline-item, .project-card, .publication-item, .award-card, .education-card, .about-content, .skills-grid, .research-card'
     );
     
     animateElements.forEach(el => observer.observe(el));
+}
+
+// Render KaTeX math across the page
+function initializeMathRendering() {
+    if (typeof renderMathInElement !== 'function') return;
+    renderMathInElement(document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "\\[", right: "\\]", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false}
+        ],
+        throwOnError: false
+    });
 }
 
 // Initialize various animations and interactions
@@ -371,3 +386,4 @@ if (typeof module !== 'undefined' && module.exports) {
         debounce
     };
 }
+

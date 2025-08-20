@@ -225,7 +225,6 @@ p {
 
 .hero-content {
     max-width: 800px;
-    text-align: center;
     margin: 0 auto;
 }
 
@@ -286,6 +285,33 @@ p {
     flex-wrap: wrap;
 }
 
+/* Hero layout with media */
+.hero-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hero-content { text-align: left; }
+
+.hero-media { display: flex; justify-content: center; }
+
+.hero-avatar {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-large);
+    border: 4px solid var(--background-primary);
+}
+
+@media (max-width: 992px) {
+    .hero-container { grid-template-columns: 1fr; }
+    .hero-content { text-align: center; }
+    .hero-buttons { justify-content: center; }
+}
+
 /* Section Styles */
 section {
     padding: var(--section-padding);
@@ -309,6 +335,73 @@ section {
     height: 3px;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     border-radius: 2px;
+}
+
+/* Research Section */
+.research {
+    background-color: var(--background-primary);
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.research-card {
+    background-color: var(--background-primary);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.research-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+.research-card h3 {
+    color: var(--text-primary);
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+}
+
+.research-card ul {
+    padding-left: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.research-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Methods cloud */
+.methods-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.method-tag {
+    background-color: var(--background-tertiary);
+    color: var(--text-primary);
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8125rem;
+    border: 1px solid var(--border-color);
 }
 
 /* About Section */

@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iheb Gafsi - ML Engineer & AI Researcher</title>
+    <title>Iheb Gafsi - ML Engineer | Mathematics & Physics Enthusiast</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%231e40af;stop-opacity:1'/><stop offset='100%25' style='stop-color:%237c3aed;stop-opacity:1'/></linearGradient><linearGradient id='accent' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%2360a5fa;stop-opacity:1'/><stop offset='100%25' style='stop-color:%23a78bfa;stop-opacity:1'/></linearGradient></defs><rect width='32' height='32' rx='8' fill='url(%23bg)'/><circle cx='16' cy='16' r='3' fill='none' stroke='%23ffffff' stroke-width='1.5' opacity='0.8'/><ellipse cx='16' cy='16' rx='8' ry='4' fill='none' stroke='%23ffffff' stroke-width='1' opacity='0.6'/><ellipse cx='16' cy='16' rx='8' ry='4' fill='none' stroke='%23ffffff' stroke-width='1' opacity='0.6' transform='rotate(60 16 16)'/><ellipse cx='16' cy='16' rx='8' ry='4' fill='none' stroke='%23ffffff' stroke-width='1' opacity='0.6' transform='rotate(120 16 16)'/><circle cx='16' cy='16' r='2' fill='%23ffffff'/><circle cx='24' cy='16' r='1.5' fill='url(%23accent)'/><circle cx='8' cy='16' r='1.5' fill='url(%23accent)'/><circle cx='20' cy='9' r='1.5' fill='url(%23accent)'/><circle cx='12' cy='23' r='1.5' fill='url(%23accent)'/><text x='16' y='19' font-family='Inter, sans-serif' font-size='6' font-weight='bold' fill='%231e40af' text-anchor='middle'>I</text></svg>">
     
     <!-- Meta tags for better SEO and social sharing -->
-    <meta name="description" content="Iheb Gafsi - ML Engineer, AI Researcher, and Technical Course Writer specializing in accelerated AI systems, federated ML pipelines, and distributed workloads.  Coming from a physics and mathematics background, I employ and develop powerful tools from physics, mathematics, computer science and theoretical neuroscience to understand how large neural networks learn, compute, scale, reason and imagine. I additionally use machine learning tools to understand physical systems and their behavior like particle physics and quantum mechanics">
+    <meta name="description" content="Iheb Gafsi — Computational Physicist and Applied Mathematician working at the intersection of physics, mathematics, and machine intelligence. My research explores how large neural systems learn and compute through the lenses of statistical mechanics, dynamical systems, information theory, and geometry. I also build physics-informed and scientific ML systems for modeling complex phenomena from quantum mechanics to fluid dynamics.">
     <meta name="keywords" content="Machine Learning, Artificial Intelligence, Deep Learning, Neural Networks, AI Research, MLOps, Computer Vision, NLP">
     <meta name="author" content="Iheb Gafsi">
     
     <!-- Open Graph meta tags for social media -->
-    <meta property="og:title" content="Iheb Gafsi - ML Engineer & AI Researcher">
-    <meta property="og:description" content="Specializing in accelerated AI systems, federated ML pipelines, and distributed workloads. Expert in LLMs, TTS, ASR, and Multi-Modal Topologies.">
+    <meta property="og:title" content="Iheb Gafsi - Computational Physicist & Applied Mathematician">
+    <meta property="og:description" content="Research in statistical physics of learning, scientific computing, and physics-informed AI. Also building accelerated AI systems and distributed ML pipelines.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ihebgafsi.dev">
     
     <!-- Twitter Card meta tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Iheb Gafsi - ML Engineer & AI Researcher">
-    <meta name="twitter:description" content="Specializing in accelerated AI systems, federated ML pipelines, and distributed workloads.">
+    <meta name="twitter:title" content="Iheb Gafsi - Computational Physicist & Applied Mathematician">
+    <meta name="twitter:description" content="Research in statistical physics of learning, scientific computing, and physics-informed AI.">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- KaTeX for scientific math rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -37,6 +41,7 @@
             <a href="#" class="nav-logo">Iheb Gafsi</a>
             <div class="nav-menu" id="nav-menu">
                 <a href="#about" class="nav-link">About</a>
+                <a href="#research" class="nav-link">Research</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#volunteering" class="nav-link">Leadership</a>
                 <a href="#education" class="nav-link">Education</a>
@@ -57,10 +62,10 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">Iheb Gafsi</h1>
-                <p class="hero-subtitle">ML Engineer | Editor at DataCamp | Engineering Student at INSAT</p>
+                <p class="hero-subtitle">Machine Learning Engineer | Mathematics & Physics Enthusiast</p>
                 <p class="hero-description">
-                    Bridging physics, mathematics, and AI to understand how neural networks learn and reason. 
-                    Specializing in accelerated AI systems, federated ML pipelines, and quantum-ML applications.
+                    I study learning and computation in large-scale neural systems using tools from statistical physics, dynamical systems, information theory, and geometry.
+                    I also build physics‑informed and scientific ML systems for modeling complex physical phenomena.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
@@ -81,6 +86,9 @@
                     <a href="#projects" class="btn btn-secondary">View Projects</a>
                 </div>
             </div>
+            <div class="hero-media">
+                <img src="image.jpg" alt="Portrait" class="hero-avatar" />
+            </div>
         </div>
     </section>
 
@@ -91,38 +99,87 @@
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-description">
-                        I work on accelerated AI systems enabling edge intelligence with federated ML pipelines, 
-                        focusing on decentralized data and distributed workloads. My expertise spans Large Language 
-                        Models (LLMs), Text-To-Speech (TTS), Automatic Speech Recognition (ASR), and Multi-Modal Topologies.
-                        Coming from a physics and mathematics background, I employ and develop powerful tools from physics, mathematics, computer science and theoretical neuroscience to understand how large neural networks learn, compute, scale, reason and imagine. I concomitantly use machine learning tools to understand physical systems and their behavior like particle physics and quantum mechanics.
+                        My research lies at the intersection of statistical physics, dynamical systems theory, and machine learning. I investigate the fundamental mechanisms underlying learning and computation in large-scale neural systems through the lens of statistical mechanics, information geometry, and optimization theory. My work addresses questions of generalization, scaling laws, and the emergence of structure in high-dimensional representations.
+                    </p>
+                    <p class="about-description">
+                        On the applied side, I develop physics-informed neural networks and scientific computing frameworks for modeling complex physical phenomena—from quantum systems to fluid dynamics. This involves numerical methods for PDEs, uncertainty quantification, and interpretable models that respect physical constraints. I also work on accelerated AI systems and distributed ML pipelines, with particular focus on efficient training dynamics and memory-constrained optimization.
                     </p>
                     <div class="about-location">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Based in Germany</span>
+                        <span>Based in Tunisia</span>
                     </div>
                 </div>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>AI & Machine Learning</h3>
+                        <h3>Physics & Mathematics</h3>
                         <div class="skills">
-                            <span class="skill-tag">Large Language Models</span>
-                            <span class="skill-tag">Multi-Agent Systems</span>
-                            <span class="skill-tag">Computer Vision</span>
-                            <span class="skill-tag">NLP</span>
-                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">Statistical Mechanics</span>
+                            <span class="skill-tag">Quantum Mechanics</span>
+                            <span class="skill-tag">Dynamical Systems</span>
+                            <span class="skill-tag">Information Theory</span>
+                            <span class="skill-tag">Differential Geometry</span>
+                            <span class="skill-tag">Stochastic Processes</span>
+                            <span class="skill-tag">Optimization Theory</span>
+                            <span class="skill-tag">Numerical Analysis</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3>Engineering & Systems</h3>
+                        <h3>Scientific Computing & ML</h3>
                         <div class="skills">
-                            <span class="skill-tag">MLOps</span>
-                            <span class="skill-tag">Distributed Systems</span>
-                            <span class="skill-tag">Data Engineering</span>
-                            <span class="skill-tag">Edge Computing</span>
+                            <span class="skill-tag">Physics-Informed Neural Networks</span>
+                            <span class="skill-tag">PDE Solvers</span>
+                            <span class="skill-tag">Bayesian Inference</span>
+                            <span class="skill-tag">Monte Carlo Methods</span>
+                            <span class="skill-tag">Large Language Models</span>
+                            <span class="skill-tag">Computer Vision</span>
                             <span class="skill-tag">Quantum Computing</span>
+                            <span class="skill-tag">Distributed Systems</span>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="research" id="research">
+        <div class="container">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>Physics of Learning</h3>
+                    <ul>
+                        <li>Statistical mechanics of generalization and scaling</li>
+                        <li>Dynamical systems and optimization landscapes</li>
+                        <li>Information theory and representation geometry</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <h3>Scientific Computing</h3>
+                    <ul>
+                        <li>Numerical methods for PDEs and inverse problems</li>
+                        <li>Physics‑informed neural networks (PINNs, KANs)</li>
+                        <li>Uncertainty quantification and Bayesian inference</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <h3>Quantum & Complex Systems</h3>
+                    <ul>
+                        <li>Quantum information and quantum‑ML</li>
+                        <li>Complex networks and stochastic processes</li>
+                        <li>Interpretable models for physical systems</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="methods-cloud">
+                <span class="method-tag">Variational inference</span>
+                <span class="method-tag">Bayesian neural nets</span>
+                <span class="method-tag">PDE‑constrained optimization</span>
+                <span class="method-tag">Monte Carlo & MCMC</span>
+                <span class="method-tag">Langevin dynamics</span>
+                <span class="method-tag">Spectral methods</span>
+                <span class="method-tag">Finite‑element/volume</span>
+                <span class="method-tag">Information geometry</span>
             </div>
         </div>
     </section>
@@ -154,7 +211,7 @@
                         <h3>Deep Learning Instructor</h3>
                         <h4>NVIDIA</h4>
                         <span class="timeline-date">May 2024 – Apr 2025</span>
-                        <span class="timeline-location">Stuttgart, Germany (Hybrid)</span>
+                        <span class="timeline-location">Stuttgart, Tunisia (Hybrid)</span>
                         <p>Coached 1,900+ professionals and collaborated with universities. Delivered workshops on Accelerated AI using NVIDIA's NeMo Services, Cloud, RAPIDS, and Jetson Nano.</p>
                         <ul>
                             <li>Efficient Large Language Models Customization</li>
@@ -225,7 +282,7 @@
                         <h3>Technical Advisor</h3>
                         <h4>Revenger AI</h4>
                         <span class="timeline-date">Sep 2024 – Oct 2024</span>
-                        <span class="timeline-location">Cologne, Germany (On-site)</span>
+                        <span class="timeline-location">Cologne, Tunisia (On-site)</span>
                         <p>Employed advanced AI for reverse engineering tasks, including vulnerability identification and data extraction. Developed AI-driven reverse engineering frameworks for efficiency and precision.</p>
                         <div class="timeline-skills">
                             <span class="skill-tag">Multi-agent Systems</span>
@@ -422,7 +479,7 @@
 
                 <div class="course-card">
                     <div class="course-icon">
-                        <i class="fas fa-quantum-gate"></i>
+                        <i class="fas fa-infinity"></i>
                     </div>
                     <h3>Quantum Computation</h3>
                     <h4>MIT OpenCourseWare</h4>
@@ -805,7 +862,7 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Germany</span>
+                            <span>Tunisia</span>
                         </div>
                         <div class="contact-item">
                             <i class="fab fa-linkedin"></i>
